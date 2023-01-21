@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        // 'bg-section': "url('./image/bg-uyn.png')",
+                    },
+                    container: {
+                        padding: {
+                            xsm: '10px',
+                            sm: '10px',
+                            lg: '10px',
+                            xl: '10px',
+                        },
+                        screens: {
+                            xsm: '310px',
+                            sm: '400px',
+                            lg: '500px',
+                            xl: '600px',
+                            "2xl": '700px',
+                            "3xl": '800px',
+                            // "4xl": '900px',
+                            // "5xl": '1000px',
+                            // "6xl": '1100px',
+
+                        },
+                    },
+                    screens: {
+                        xsm: '310px',
+                        sm: '400px',
+                        lg: '500px',
+                        xl: '600px',
+                        "2xl": '700px',
+                        "3xl": '800px',
+                        // "4xl": '900px',
+                        // "5xl": '1000px',
+                        // "6xl": '1100px',
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="./script/main.js" defer ></script>
+    <title>Document</title>
+</head>
+
+<body class=" bg-cyan-800">
+    <main>
+        <div class="container mx-auto mt-7 ">
+            <div id="display" class=" text-end text-2xl items-center font-bold text-neutral-700  grid 3xl:w-96 lg:w-80 h-12 border-solid border-2 border-black xsm:mx-auto  bg-orange-300  rounded-md" >
+
+            </div>
+            <div id="buttons" class="mt-5 w-96 mx-auto bg-orange-300 py-5 rounded-md pl-1 border-solid border-2 border-black" >
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 ml-6  mb-3 hover:text-white font-bold text-lg active:bg-orange-500"  id="numbers">1</button>
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900  hover:text-white font-bold text-lg active:bg-orange-500"  id="numbers">2</button>
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 hover:text-white font-bold text-lg active:bg-orange-500"  id="numbers">3</button>
+                <button class="px-7 py-2 bg-white rounded-md hover:bg-slate-900  hover:text-white font-bold text-lg active:bg-orange-500"  id="delete">del</button>
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 ml-6 mb-3 hover:text-white font-bold text-lg active:bg-orange-500"  id="numbers">4</button>
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 hover:text-white font-bold text-lg active:bg-orange-500"  id="numbers">5</button>
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 hover:text-white font-bold text-lg active:bg-orange-500"  id="numbers">6</button>
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 hover:text-white font-bold text-lg active:bg-orange-500"  id="operator">+</button>
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 ml-6  mb-3 hover:text-white font-bold text-lg active:bg-orange-500"  id="numbers">7</button>
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 hover:text-white font-bold text-lg active:bg-orange-500"  id="number">8</button>
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 hover:text-white font-bold text-lg active:bg-orange-500"  id="number">9</button>
+                <button class="px-9 py-2 bg-white rounded-md hover:bg-slate-900 hover:text-white font-bold text-lg active:bg-orange-500"  id="operator">-</button>
+                <!-- <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 hover:text-white font-bold text-lg active:bg-orange-500"  id="operators">.</button> -->
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 ml-6  mb-3 hover:text-white font-bold text-lg active:bg-orange-500"  id="numbers">/</button>
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 hover:text-white font-bold text-lg active:bg-orange-500"  id="operator">0</button>
+                <button class="px-8 py-2 bg-white rounded-md hover:bg-slate-900 hover:text-white font-bold text-lg active:bg-orange-500"  id="operator">*</button>
+                <button class="px-5 py-2 bg-white rounded-md hover:bg-slate-900 hover:text-white font-bold text-lg active:bg-orange-500"  id="reset">reset</button>
+                <button class=" w-2/3 py-2 bg-white rounded-md hover:bg-slate-900 ml-16  hover:text-white font-bold text-lg active:bg-orange-500"  id="ravno">=</button>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
